@@ -39,7 +39,11 @@ function createBot (token, botInfo) {
           message.channel.startTyping();
           if (message.author.bot === messageResponses[0].respondsToBot) {
             setTimeout(function (message, response) {
-              message.channel.send(response.responseText);
+              if (response.fileUrl) {
+                message.channel.send(response.responseText, { file: response.fileUrl});
+              } else {
+                message.channel.send(response.responseText);
+              }
               message.channel.stopTyping();
             }, calculateTimeToType(messageResponses[0].responseText, botInfo.typingSpeedWPM), message, messageResponses[0]);
           }
@@ -59,7 +63,11 @@ function createBot (token, botInfo) {
       if (generalResponses.length !== 0) {
         channelToPostIn.startTyping();
         setTimeout(function () {
-          channelToPostIn.send(generalResponses[botInfo.currentRandom++].responseText);
+          if (generalResponses[botInfo.currentRandom].fileURL) {
+            channelToPostIn.send(generalResponses[botInfo.currentRandom].responseText, { file: generalResponses[botInfo.currentRandom].fileURL});
+          } else {
+            channelToPostIn.send(generalResponses[botInfo.currentRandom].responseText);
+          }
           botInfo.currentRandom++;
           if (botInfo.currentRandom >= generalResponses.length) {
             botInfo.currentRandom = 0;

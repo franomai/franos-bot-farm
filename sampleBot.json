@@ -8,7 +8,8 @@
     {
       "responseTrigger" : "",
       "respondsToBot" : false,
-      "responseText" : "Beep boop!"
+      "responseText" : "ARE YOU TOO GOOD FOR YOUR HOME?",
+      "fileURL" : "https://i.ytimg.com/vi/WyE6XeY_LVA/maxresdefault.jpg"
     }, {
       "responseTrigger" : "anime",
       "respondsToBot" : false,
