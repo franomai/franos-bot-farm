@@ -1,0 +1,18 @@
+{
+  "name" : "Good bot meme",
+  "description" : "Someone for the other bot to respond to",
+  "typingSpeedWPM" : 40,
+  "coolDownTimeSeconds" : 15,
+  "timeToRespondSeconds" : 2,
+  "responses" : [
+    {
+      "responseTrigger" : "",
+      "respondsToBot" : false,
+      "responseText" : "Does anyone have a good meme to share with me?"
+    }, {
+      "responseTrigger" : "",
+      "respondsToBot" : false,
+      "responseText" : "Any meme will do!"
+    }
+  ]
+}

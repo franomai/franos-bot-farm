@@ -1,0 +1,22 @@
+{
+  "name" : "Sample Text",
+  "description" : "Test post please ignore",
+  "typingSpeedWPM" : 40,
+  "coolDownTimeSeconds" : 10,
+  "timeToRespondSeconds" : 2,
+  "responses" : [
+    {
+      "responseTrigger" : "",
+      "respondsToBot" : false,
+      "responseText" : "Beep boop!"
+    }, {
+      "responseTrigger" : "anime",
+      "respondsToBot" : false,
+      "responseText" : "sugoi sugoi sugoi"
+    }, {
+      "responseTrigger" : "meme",
+      "respondsToBot" : true,
+      "responseText" : "( ͡° ͜ʖ ͡°)"
+    }
+  ]
+}
