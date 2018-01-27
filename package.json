@@ -1,0 +1,14 @@
+{
+  "name": "franos-bot-farm",
+  "version": "0.1.0",
+  "description": "Wow, why are all the animals sheep?",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Frano Stanisic",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.0"
+  }
+}
